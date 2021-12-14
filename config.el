@@ -139,3 +139,7 @@
          :unnarrowed t)
         )
       )
+;; add to ~/.doom.d/config.el
+(setq +notmuch-sync-backend 'offlineimap)
+;; eww
+(setq browse-url-browser-function 'eww-browse-url)
