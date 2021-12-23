@@ -102,14 +102,14 @@
 ;; (use-package! org-roam-bibtex
 ;;   :after org-roam)
 
-(use-package! websocket
-    :after org-roam)
-
-(use-package! org-roam-ui
-    :after org-roam
-    :commands (org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-port 35900))
+;; (use-package! websocket
+;;     :after org-roam)
+;; 
+;; (use-package! org-roam-ui
+;;     :after org-roam
+;;     :commands (org-roam-ui-mode)
+;;     :config
+;;     (setq org-roam-ui-port 35900))
 
 (use-package! org-roam-protocol
   :after org-protocol)
@@ -139,7 +139,10 @@
          :unnarrowed t)
         )
       )
-;; add to ~/.doom.d/config.el
-(setq +notmuch-sync-backend 'offlineimap)
+;; (setq +notmuch-sync-backend 'offlineimap)
 ;; eww
 (setq browse-url-browser-function 'eww-browse-url)
+
+(use-package! direnv
+  :config
+  (direnv-mode))
